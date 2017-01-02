@@ -1,0 +1,131 @@
+body{
+    background-color: #fffbff;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+#navBar {
+    height: 10%;
+    width: 99.5%;
+    background-color: #bc0000;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+}
+#NavMenuContainer{
+    background-color: #b10000;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+}
+#navBarTitle p{
+    margin: 0.5em;
+    font-size: 2em;
+    font-family: "Arial Black";
+}
+.navBarList{
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    font-family: "Arial Black";
+}
+.debug{
+    border: red solid thin;
+}
+.inline-block{
+    display: inline-block;
+}
+.navBarListContainer{
+    text-align: center;
+    list-style: none;
+    top: 0;
+}
+#contentContainer{
+    width: 100%;
+    text-align: center;
+}
+.content{
+    height: 75vw;
+    width: 75vw;
+    display: inline-block;
+    margin: 25px;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+    border: red solid medium;
+    box-shadow: 0 0 1em black;
+}
+.contentImg{
+    height: 75vw;
+    opacity: 0.8;
+}
+#contentImg1{
+    position: relative;
+    left: -20vw;
+}
+#contentIntroduction{
+    font-size: 16px;
+    font-family: "Arial Black";
+}
+#initialContent{
+    width: 85vw;
+    height: auto;
+    margin-bottom: 0;
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+}
+.tileTitle{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    width: 75vw;
+    font-size: 3em;
+    margin-top: 30vw;
+    font-family: "Arial Black";
+}
+#navBarIcon{
+    height: 2em;
+    width: 2em;
+    position: relative;
+    top: 0.3em;
+}
+#title{
+    display: inline-block;
+}
+/*  Mobile  */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+    #navMenu{
+        display: inline-block;
+
+    }
+    #navBar{
+        text-align: left;
+    }
+    #navBarTitleContainer{
+        width: 49%;
+    }
+    #NavMenuContainer{
+        display: inline-block;
+        width: 49%;
+        text-align: right;
+    }
+}
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: deepskyblue;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: dodgerblue;
+    }
+}
+
